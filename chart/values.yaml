@@ -18,12 +18,12 @@ nodeExporter:
 
 server:
   resources: 
-      requests:
-        cpu: 100m #default 500m
-        memory: 512Mi
-      limits:
-        cpu: 200m #default 500m
-        memory: 512Mi
+    requests:
+      cpu: 100m #default 500m
+      memory: 512Mi
+    limits:
+      cpu: 200m #default 500m
+      memory: 512Mi
 
 pushgateway:
   resources: 

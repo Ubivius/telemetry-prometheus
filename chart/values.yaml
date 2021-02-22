@@ -1,0 +1,35 @@
+alertmanager:
+  resources: 
+    requests:
+      cpu: 10m
+      memory: 32Mi
+    limits:
+      cpu: 10m
+      memory: 32Mi
+
+nodeExporter:
+  resources: 
+    requests:
+      cpu: 25m #default 100m
+      memory: 30Mi
+    limits:
+      cpu: 100m #default 200m
+      memory: 50Mi
+
+server:
+  resources: 
+    requests:
+      cpu: 100m #default 500m
+      memory: 512Mi
+    limits:
+      cpu: 200m #default 500m
+      memory: 512Mi
+
+pushgateway:
+  resources: 
+    requests:
+      cpu: 10m
+      memory: 32Mi
+    limits:
+      cpu: 10m
+      memory: 32Mi

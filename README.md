@@ -1,3 +1,7 @@
+# telemetry-prometheus
+
+Tool that scrapes metrics (ex: Cpu, memory and disk usage) from the cluster's components
+
 # Prometheus Helm Chart
 
 - prometheus · prometheus/prometheus-community (https://artifacthub.io/packages/helm/prometheus-community/prometheus)
@@ -15,7 +19,7 @@ $ helm repo update
 To install the chart with the release name `prometheus`:
 
 ```console
-$ helm install prometheus --version <version> prometheus-community/prometheus -f values.yaml
+$ helm install prometheus --version <version> prometheus-community/prometheus -f chart/values.yaml
 ```
 
 ## Uninstalling the Chart

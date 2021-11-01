@@ -20,10 +20,10 @@ server:
   resources: 
     requests:
       cpu: 50m #default 500m
-      memory: 512Mi
+      memory: 768Mi
     limits:
       cpu: 50m #default 500m
-      memory: 512Mi
+      memory: 900Mi
 
 pushgateway:
   resources: 

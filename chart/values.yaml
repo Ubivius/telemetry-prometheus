@@ -17,6 +17,8 @@ nodeExporter:
       memory: 50Mi
 
 server:
+  strategy:
+    type: Recreate
   resources: 
     requests:
       cpu: 50m #default 500m

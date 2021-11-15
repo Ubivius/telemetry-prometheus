@@ -10,26 +10,28 @@ alertmanager:
 nodeExporter:
   resources: 
     requests:
-      cpu: 25m #default 100m
+      cpu: 10m #default 100m
       memory: 30Mi
     limits:
-      cpu: 100m #default 200m
+      cpu: 10m #default 200m
       memory: 50Mi
 
 server:
+  strategy:
+    type: Recreate
   resources: 
     requests:
-      cpu: 100m #default 500m
-      memory: 512Mi
+      cpu: 50m #default 500m
+      memory: 768Mi
     limits:
-      cpu: 200m #default 500m
-      memory: 512Mi
+      cpu: 50m #default 500m
+      memory: 900Mi
 
 pushgateway:
   resources: 
     requests:
-      cpu: 10m
+      cpu: 5m
       memory: 32Mi
     limits:
-      cpu: 10m
+      cpu: 5m
       memory: 32Mi

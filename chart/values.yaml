@@ -35,6 +35,3 @@ pushgateway:
     limits:
       cpu: 5m
       memory: 32Mi
-
-# To fix Jaeger config conflict
-enableServiceLinks: false

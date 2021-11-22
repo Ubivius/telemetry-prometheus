@@ -37,8 +37,9 @@ pushgateway:
       memory: 32Mi
 
 serverFiles:
-  scrape_configs:
-    - job_name: 'microservice-user'
-      scrape_interval: 5s
-      static_configs:
-        - targets: ['http://microservice-user:8888']
+  prometheus.yml:
+    scrape_configs:
+      - job_name: 'microservice-user'
+        scrape_interval: 5s
+        static_configs:
+          - targets: ['http://microservice-user:8888']

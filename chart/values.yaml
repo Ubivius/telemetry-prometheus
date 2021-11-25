@@ -35,11 +35,3 @@ pushgateway:
     limits:
       cpu: 5m
       memory: 32Mi
-
-serverFiles:
-  prometheus.yml:
-    scrape_configs:
-      - job_name: 'microservice-user'
-        scrape_interval: 5s
-        static_configs:
-          - targets: ['http://microservice-user:8888']
